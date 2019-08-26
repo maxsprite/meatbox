@@ -12,13 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2019_08_26_133622) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.integer "resource_id"
+    t.bigint "resource_id"
     t.string "author_type"
-    t.integer "author_id"
+    t.bigint "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -52,8 +55,8 @@ ActiveRecord::Schema.define(version: 2019_08_26_133622) do
   end
 
   create_table "product_categories_products", id: false, force: :cascade do |t|
-    t.integer "product_category_id", null: false
-    t.integer "product_id", null: false
+    t.bigint "product_category_id", null: false
+    t.bigint "product_id", null: false
     t.index ["product_category_id", "product_id"], name: "index_category_id_product_id"
     t.index ["product_id", "product_category_id"], name: "index_product_id_category_id"
   end

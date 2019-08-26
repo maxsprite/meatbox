@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo url - https://test-meatbox.herokuapp.com
+Demo admin url - https://test-meatbox.herokuapp.com/admin
 
-Things you may want to cover:
+Admin user: admin@example.com
+Password: password
 
-* Ruby version
+Available API methods:
 
-* System dependencies
+- https://test-meatbox.herokuapp.com/api/sign_in
+- https://test-meatbox.herokuapp.com/api/sign_up
+- https://test-meatbox.herokuapp.com/api/products/index
+- https://test-meatbox.herokuapp.com/api/users/user_id/add_products/product_id
+- https://test-meatbox.herokuapp.com/api/users/my_profile
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+For auth and access to require auth API methods - used devise-jwt gem.

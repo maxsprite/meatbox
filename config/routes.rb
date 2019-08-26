@@ -17,5 +17,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   scope 'api' do
     get 'products/index', to: 'products#index'
+    get 'users/my_profile', to: 'users#my_profile'
+    post 'users/:user_id/add_products/:product_id', to: 'users#add_products'
   end
 end

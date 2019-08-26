@@ -4,9 +4,8 @@ Demo url - https://test-meatbox.herokuapp.com
 
 Demo admin url - https://test-meatbox.herokuapp.com/admin
 
-Admin user: admin@example.com
-
-Password: password
+- Admin user: admin@example.com
+- Password: password
 
 Available API methods:
 

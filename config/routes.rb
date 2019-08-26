@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   scope 'api' do
     get 'products/index', to: 'products#index'
     get 'users/my_profile', to: 'users#my_profile'
-    post 'users/:user_id/add_products/:product_id', to: 'users#add_products'
+    post 'users/:user_id/add_products/:product_id', to: 'users#add_products', as: 'users_add_products'
   end
 end

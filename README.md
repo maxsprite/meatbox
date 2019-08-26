@@ -9,10 +9,10 @@ Demo admin url - https://test-meatbox.herokuapp.com/admin
 
 Available API methods:
 
-- https://test-meatbox.herokuapp.com/api/sign_in
-- https://test-meatbox.herokuapp.com/api/sign_up
-- https://test-meatbox.herokuapp.com/api/products/index
-- https://test-meatbox.herokuapp.com/api/users/user_id/add_products/product_id
-- https://test-meatbox.herokuapp.com/api/users/my_profile
+- GET|POST https://test-meatbox.herokuapp.com/api/sign_in
+- POST https://test-meatbox.herokuapp.com/api/sign_up
+- GET https://test-meatbox.herokuapp.com/api/products/index
+- POST https://test-meatbox.herokuapp.com/api/users/user_id/add_products/product_id
+- GET https://test-meatbox.herokuapp.com/api/users/my_profile
 
 For auth and access to require auth API methods - used devise-jwt gem.
